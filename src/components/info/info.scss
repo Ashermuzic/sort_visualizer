@@ -1,3 +1,33 @@
 .info-container {
+  box-sizing: border-box;
+  padding: 10px;
   height: 100vh;
+  .info-card {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(165, 161, 161, 0.26);
+    height: calc(100vh - 20px);
+    .info-card-title {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding: 7px 0px;
+    }
+    .info-card-info {
+      margin-top: 5px;
+      letter-spacing: 1px;
+      line-height: 2;
+      .add-on {
+        margin-top: 30px;
+        background-color: rgba(200, 255, 0, 0.315);
+        padding: 5px;
+      }
+    }
+  }
 }

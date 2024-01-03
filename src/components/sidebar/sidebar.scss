@@ -1,3 +1,46 @@
 .side-container {
+  box-sizing: border-box;
+  padding: 10px;
   height: 100vh;
+  .side-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(165, 161, 161, 0.26);
+    height: calc(100vh - 20px);
+    .side-title {
+      background-color: rgba(255, 0, 0, 0.137);
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+      font-weight: 600;
+    }
+    .side-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .side-content-card {
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+        border-radius: 10px;
+        background-color: rgb(168, 161, 161);
+      }
+    }
+    .side-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      .side-links-icon {
+        font-size: 30px;
+        color: #3b3b3b;
+      }
+    }
+  }
 }
