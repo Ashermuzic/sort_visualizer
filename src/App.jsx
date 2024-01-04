@@ -1,23 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// App.js
+import React, { useState } from "react";
 import "./App.scss";
 import Sidebar from "./components/sidebar/Sidebar";
 import Content from "./components/content/Content";
 import Info from "./components/info/Info";
 
 function App() {
+  const [selectedAlgorithm, setSelectedAlgorithm] = useState("");
+
+  const handleAlgorithmSelect = (algorithmType) => {
+    setSelectedAlgorithm(algorithmType);
+  };
+
   return (
     <>
       <div className="container">
         <div>
-          <Sidebar />
+          <Sidebar onSelectAlgorithm={handleAlgorithmSelect} />
         </div>
         <div>
           <Content />
         </div>
         <div>
-          <Info />
+          <Info selectedAlgorithm={selectedAlgorithm} />
         </div>
       </div>
     </>
