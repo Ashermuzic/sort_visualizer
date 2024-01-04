@@ -12,21 +12,10 @@
     padding: 10px;
     background-color: rgba(165, 161, 161, 0.26);
     height: calc(100vh - 20px);
-    .content-card-navbar {
-      display: flex;
-      justify-content: space-between;
-      .content-card-navbar-button {
-        padding: 7px 10px;
-        border: 1px solid rgb(182, 177, 177);
-        border-radius: 10px;
-        .button-range {
-          display: flex;
-          gap: 30px;
-        }
-      }
-    }
+
     .content-card-main {
-      background-color: red;
+      display: flex;
+      justify-content: center;
     }
   }
 }
