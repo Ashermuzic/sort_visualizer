@@ -3,7 +3,7 @@ import { getMergeSortAnimations } from "../SortingAlgorithms/SortingAlgorithms.j
 import "./SortingVisualizer.scss";
 
 // Change this value for the speed of the animations.
-const ANIMATION_SPEED_MS = 5;
+const ANIMATION_SPEED_MS = 7;
 
 // Change this value for the number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 100;
@@ -30,7 +30,7 @@ export class SortingVisualizer extends React.Component {
   resetArray() {
     const array = [];
     for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(randomIntFromInterval(5, 600));
+      array.push(randomIntFromInterval(5, 590));
     }
     this.setState({ array });
   }

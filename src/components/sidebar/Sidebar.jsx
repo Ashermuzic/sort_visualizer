@@ -1,17 +1,16 @@
-// Sidebar.js
 import React from "react";
 import "./sidebar.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Sidebar({ onSelectAlgorithm }) {
   const algorithms = [
     { type: "Merge Sort" },
     { type: "Quick Sort" },
     { type: "Bubble Sort" },
-    { type: "Selection Sort" },
-    { type: "Insertion Sort" },
     { type: "Heap Sort" },
+    { type: "... more " },
   ];
 
   return (
@@ -30,7 +29,12 @@ function Sidebar({ onSelectAlgorithm }) {
           ))}
         </div>
         <div className="side-links">
-          <FaGithub className="side-links-icon" />
+          <Link
+            target="_blank"
+            to="https://github.com/Ashermuzic/sort_visualizer"
+          >
+            <FaGithub className="side-links-icon" />
+          </Link>
           <FaLinkedin className="side-links-icon" />
         </div>
       </div>
