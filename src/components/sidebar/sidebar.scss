@@ -37,6 +37,7 @@
         box-shadow: 3px 3px 3px rgba(105, 100, 133, 0.582);
         cursor: pointer;
         &:hover {
+          // TODO: make hover color lighter
           background-color: rgb(161, 155, 155);
         }
         &:active {

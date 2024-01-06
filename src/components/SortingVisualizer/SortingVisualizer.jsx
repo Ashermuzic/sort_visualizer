@@ -1,11 +1,11 @@
 import React from "react";
-import { getMergeSortAnimations } from "../SortingAlgorithms/SortingAlgorithms.js";
+import { getMergeSortAnimations } from "../SortingAlgorithms/mergeSort.js";
 import "./SortingVisualizer.scss";
 
-// Change this value for the speed of the animations.
+// speed of the animations.
 const ANIMATION_SPEED_MS = 7;
 
-// Change this value for the number of bars (value) in the array.
+// number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 100;
 
 // This is the main color of the array bars.
